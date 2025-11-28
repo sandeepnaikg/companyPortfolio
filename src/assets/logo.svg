@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="768" height="768" viewBox="0 0 768 768" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#9D4EDD;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B2CBF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="768" height="768" fill="url(#purpleGrad)"/>
+  <text x="50%" y="52%" text-anchor="middle" dominant-baseline="middle" 
+        font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" 
+        font-weight="600" 
+        font-size="280" 
+        fill="#FFFFFF" 
+        letter-spacing="-8">Gozy</text>
+</svg>
