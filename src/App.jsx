@@ -28,21 +28,26 @@ import TermsServices from "./pages/TermsServices";
 import OurPartners from "./pages/OurPartners";
 import BecomePartner from "./pages/BecomePartner";
 
-const Home = () => (
-  <>
-    <Hero />
-    <Stats />
-    <Business />
-    <Billing />
-    <CardDeal />
-    <Testimonials />
-    <Clients />
-    <CTA />
-    <div className="my-8 flex justify-center">
-      <JoinWaitlist />
-    </div>
-  </>
-);
+import { useState } from "react";
+
+const Home = () => {
+  const [waitlistOpen, setWaitlistOpen] = useState(false);
+  return (
+    <>
+      <Hero setWaitlistOpen={setWaitlistOpen} />
+      <Stats />
+      <Business />
+      <Billing />
+      <CardDeal />
+      <Testimonials />
+      <Clients />
+      <CTA />
+      <div className="my-8 flex justify-center">
+        <JoinWaitlist open={waitlistOpen} setOpen={setWaitlistOpen} />
+      </div>
+    </>
+  );
+};
 
 const App = () => {
   return (
